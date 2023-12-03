@@ -1,0 +1,27 @@
+.dataCard {
+    display: flex;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.dataCard.checked {
+    background-color: rgb(162, 209, 243);
+}
+
+.dataCard:hover {
+    transform: scale(1.05); 
+}
+
+.dataCard .dataItem {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #a71616;
+    border-radius: 5px;
+}
+

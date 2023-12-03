@@ -1,0 +1,110 @@
+
+.main-div {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.header-elements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  animation: slideInDown 0.5s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.header {
+  margin: 0;
+}
+
+.admin-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  animation: expandSearchBar 0.5s ease;
+}
+
+@keyframes expandSearchBar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.search-bar input {
+  flex: 1;
+  width: 200px; /* Set the width to 200px */
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #66afe9;
+}
+
+.delete-button {
+  padding: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+.body {
+  animation: fadeIn 1s ease;
+}
+
+.footer-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  animation: slideInUp 0.5s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

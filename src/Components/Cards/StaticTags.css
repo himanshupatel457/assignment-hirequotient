@@ -1,0 +1,22 @@
+
+
+.staticTags {
+  display: flex;
+  gap: 10px;
+  background-color: #131010; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.staticTags div {
+  flex: 1;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff; 
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
