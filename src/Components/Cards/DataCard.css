@@ -6,7 +6,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s linear; 
 }
 
 .dataCard.checked {
@@ -14,7 +14,7 @@
 }
 
 .dataCard:hover {
-    transform: scale(1.05); 
+    transform: scale(1.02); 
 }
 
 .dataCard .dataItem {
